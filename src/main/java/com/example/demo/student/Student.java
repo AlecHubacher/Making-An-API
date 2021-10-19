@@ -3,22 +3,19 @@ package com.example.demo.student;
 import javax.persistence.*;
 import java.time.LocalDate;
 @Entity
-@Table
+@Table(name="student")
 public class Student {
     @Id
-    @SequenceGenerator(
-            name = "student_sequence",
-            sequenceName = "student_sequence",
-            allocationSize = 1
-    )
-    @GeneratedValue(
-            strategy = GenerationType.SEQUENCE,
-            generator = "student_sequence"
-    )
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id")
     private long id;
+    @Column(name="name")
     private String name;
+    @Column(name="email")
     private String email;
+    @Column(name="dob")
     private LocalDate dob;
+    @Column(name="age")
     private Integer age;
 
     public Student() {
