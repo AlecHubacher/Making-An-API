@@ -25,7 +25,7 @@ public class StudentController {
         return studentService.getStudents();
     }
 
-    @GetMapping("/GetStudentById")
+    @GetMapping("/getstudentbyid")
     @ResponseBody
     public Student getStudentByID(@RequestParam Long id) {
         return studentService.getStudentByID(id);
