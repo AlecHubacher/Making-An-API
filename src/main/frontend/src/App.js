@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from "react";
 import './App.css';
 import axios from "axios";
+import Search from "./Search";
+import DataDisplay from './DataDisplay';
 
 
 const StudentProfiles = () => {
@@ -32,12 +34,26 @@ const StudentProfiles = () => {
 
 
 
-function App() {
-  return (
-    <div className="App">
-      <StudentProfiles />
-    </div>
-  );
+// function App() {
+//   return (
+//     <div className="App">
+//         <dataDisplay />
+//       <StudentProfiles />
+//         <Search />
+//     </div>
+//   );
+// }
+
+class App extends React.Component {
+    render() {
+        return (
+            <div>
+                <StudentProfiles></StudentProfiles>
+                <Search></Search>
+                <DataDisplay></DataDisplay>
+            </div>
+        );
+    }
 }
 
 export default App;
