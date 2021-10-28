@@ -1,8 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import {useEffect, useState} from "react";
 import axios from "axios";
+import APIDoc from "./APIDocumentation";
+import Search from "./Search";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 const StudentProfiles = () => {
   const [studentProfiles, setStudentProfiles] = useState([]);
@@ -33,7 +36,19 @@ const StudentProfiles = () => {
 function App() {
   return (
     <div className="App">
-      <StudentProfiles />
+        <h1>Welcome to my API Documentation</h1>
+        <div className="searchboxendpoints">
+            <Search />
+        </div>
+        <div className="apidoc">
+            <APIDoc />
+            <div className="endpoints">
+                <p>Endpoint: howdy</p>
+            </div>
+            <div className="jsonresponse">
+                <p>JSON OUTPUT</p>
+            </div>
+        </div>
     </div>
   );
 }
