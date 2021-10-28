@@ -39,17 +39,18 @@ function App() {
         <h1>Welcome to my API Documentation</h1>
         <h1>howdy</h1>
         <div className="jsonresponsebox">
+            <h1>this is the jsonresponsebox area</h1>
 
         </div>
         <div className="searchbar">
             <Search />
         </div>
-        {/*<div className="apidoc">*/}
-        {/*    <APIDoc />*/}
-        {/*    <div className="endpoints">*/}
-        {/*        <p>Endpoint: howdy</p>*/}
-        {/*    </div>*/}
-        {/*</div>*/}
+        <div className="apidoc">
+            <APIDoc />
+            <div className="endpoints">
+                <p>Endpoint: howdy</p>
+            </div>
+        </div>
     </div>
   );
 }
