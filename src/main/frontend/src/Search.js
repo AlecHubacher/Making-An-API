@@ -1,17 +1,28 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
 
-const SearchBar = () => {
+class SearchBar extends React.Component {
 
-    return (
-    <div className="search-box">
-        <input className="search-txt" name="" placeholder="Search Endpoints"/>
-        <a className="search-btn" href="#">
-            <FontAwesomeIcon icon={faCoffee}></FontAwesomeIcon>
-        </a>
+    _handleKeyPress(e) {
+        if(e.key === 'Enter') {
+            console.log("the enter key has been pressed")
+        }
+    }
 
-    </div>
-    );
+    render() {
+        return (
+            <div className="search-box">
+                <input onKeyPress={this._handleKeyPress} type="text" className="search-txt" name="" placeholder="Search Endpoints"/>
+                <a className="search-btn" href="#">
+                    <FontAwesomeIcon icon={faCoffee}></FontAwesomeIcon>
+                </a>
+            </div>
+
+        // <input type="text" onKeyPress={this._handleKeyPress} />
+
+        );
+    }
 };
 
 export default SearchBar;
