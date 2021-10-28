@@ -31,21 +31,6 @@
 
 }
 
-.search-box:hover > .search-txt {
-  width: 240px;
-  padding: 0 6px;
-}
-
-.input:valid {
-  width: 240px;
-  padding: 0 6px;
-
-}
-
-.searchendpoints:hover > .search-btn {
-  background: white;
-}
-
 .search-btn {
   color: #48dbfb;
   float: right;
@@ -64,10 +49,10 @@
   background: none;
   outline: none;
   float: left;
-  padding: 0;
+  padding: 0 6px;
   color: white;
   font-size: 16px;
   transition: 0.4s;
   line-height: 40px;
-  width: 0px;
+  width: 240px;
 }
