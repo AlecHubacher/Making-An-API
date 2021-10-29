@@ -29,7 +29,7 @@ class SearchBar extends React.Component {
             else {
                 console.log(line);
                 axios.get("http://localhost:8080/api/"+line).then(res => {
-                    console.log(res);
+                    console.log(res.data);
                     this.setState({
                         data: res.data
                     })
@@ -49,7 +49,7 @@ class SearchBar extends React.Component {
                     </a>
                 </div>
                 <div className="jsonresponsebox">
-                    <h1>{this.state.data}</h1>
+                    <pre>{JSON.stringify(this.state.data, null, 2)}</pre>
                 </div>
             </div>
 
