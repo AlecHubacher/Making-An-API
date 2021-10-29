@@ -17,12 +17,7 @@ function App() {
             so you only need to put the endpoint
         </p>
         <Search />
-        <div className="apidoc">
-            <APIDoc />
-            <div className="endpoints">
-                <p>Endpoint: howdy</p>
-            </div>
-        </div>
+        <APIDoc />
     </div>
   );
 }

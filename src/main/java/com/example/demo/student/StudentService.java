@@ -26,4 +26,6 @@ public class StudentService {
     public Student getStudentByID(Long id) {
         return studentRepository.findById(id).get();
     }
+
+    public List<String> getStudentsNames() { return studentRepository.}
 }

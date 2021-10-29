@@ -6,6 +6,18 @@
   text-align: left;
 }
 
+.endpoints {
+  text-align: left;
+  width: 50%;
+  float: left;
+}
+
+.jsonresponse {
+  text-align: left;
+  width: 50%;
+  float: left;
+}
+
 .jsonresponsebox {
   margin: auto;
   height: 400px;

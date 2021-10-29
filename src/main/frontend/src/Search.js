@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import React, {useEffect, useState} from "react";
-import Event from "./Events";
 import axios from "axios";
 import JSONPretty from "react-json-pretty";
 
@@ -38,7 +37,6 @@ class SearchBar extends React.Component {
                     })
                 });
             }
-            // {<StudentProfiles></StudentProfiles>}
         }
     }
 
@@ -52,12 +50,9 @@ class SearchBar extends React.Component {
                     </a>
                 </div>
                 <div className="jsonresponsebox">
-                    {/*<h1><pre>{JSON.stringify(this.state.data, null, 2)}</pre></h1>*/}
                     <JSONPretty data={this.state.data} theme={JSONPrettyMon}></JSONPretty>
                 </div>
             </div>
-
-        // <input type="text" onKeyPress={this._handleKeyPress} />
 
         );
     }
