@@ -12,14 +12,7 @@ function App() {
     <div className="App">
         <h1>Welcome to my API Documentation</h1>
         <h1>howdy</h1>
-        <div className="jsonresponsebox">
-            <h1>
-
-            </h1>
-        </div>
-        <div className="searchbar">
-            <Search />
-        </div>
+        <Search />
         <div className="apidoc">
             <APIDoc />
             <div className="endpoints">
