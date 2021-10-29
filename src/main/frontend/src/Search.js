@@ -3,6 +3,9 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import React, {useEffect, useState} from "react";
 import Event from "./Events";
 import axios from "axios";
+import JSONPretty from "react-json-pretty";
+
+var JSONPrettyMon = require('react-json-pretty/dist/monikai');
 
 
 class SearchBar extends React.Component {
@@ -11,7 +14,7 @@ class SearchBar extends React.Component {
         super(props);
 
         this.state = {
-            data: []
+            data: null
         }
 
         this._handleKeyPress = this._handleKeyPress.bind(this);
@@ -49,7 +52,8 @@ class SearchBar extends React.Component {
                     </a>
                 </div>
                 <div className="jsonresponsebox">
-                    <pre>{JSON.stringify(this.state.data, null, 2)}</pre>
+                    {/*<h1><pre>{JSON.stringify(this.state.data, null, 2)}</pre></h1>*/}
+                    <JSONPretty data={this.state.data} theme={JSONPrettyMon}></JSONPretty>
                 </div>
             </div>
 
