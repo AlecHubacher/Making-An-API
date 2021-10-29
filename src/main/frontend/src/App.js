@@ -1,9 +1,10 @@
 import './App.css';
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import axios from "axios";
 import APIDoc from "./APIDocumentation";
 import Search from "./Search";
-import StudentProfiles from "./APICalls";
+import Event from "./Events";
+import Events from "./Events";
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
         <h1>howdy</h1>
         <div className="jsonresponsebox">
             <h1>
-                <StudentProfiles />
+
             </h1>
         </div>
         <div className="searchbar">
