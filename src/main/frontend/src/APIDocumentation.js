@@ -3,19 +3,11 @@ import ReactMarkdown from 'react-markdown'
 export default function APIDoc(){
     return(
         <div className="apidoc">
-            <div className="endpoints">
+            <div className="boxgetallstudents">
                 <div className="getallstudents">
-                    <ReactMarkdown>
-                        ```
-                        GET student/allstudents
-                        ```
-                    </ReactMarkdown>
+                    <span className="getmethod">GET</span>
+                    <span className="getendpoint">student/allstudents</span>
                 </div>
-            </div>
-            <div className="jsonresponse">
-                <ReactMarkdown>
-
-                </ReactMarkdown>
             </div>
         </div>
     )

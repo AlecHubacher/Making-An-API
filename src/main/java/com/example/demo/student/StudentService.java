@@ -27,5 +27,4 @@ public class StudentService {
         return studentRepository.findById(id).get();
     }
 
-    public List<String> getStudentsNames() { return studentRepository.}
 }
