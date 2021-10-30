@@ -21,10 +21,11 @@
   margin-top: 100px;
   margin-bottom: 15px;
   border-style: solid;
+  border-radius: 25px;
   padding: 10px;
   overflow: auto;
   text-align: left;
-  background-color: #d2ffcd;
+  background-color: #1e1e1e; /*1e1e1e*/ /*2f3640*/
 
 }
 

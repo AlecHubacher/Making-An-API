@@ -4,7 +4,7 @@ import React, {useEffect, useState} from "react";
 import axios from "axios";
 import JSONPretty from "react-json-pretty";
 
-var JSONPrettyMon = require('react-json-pretty/dist/adventure_time');
+var JSONPrettyMon = require('react-json-pretty/dist/personalTheme');
 
 
 class SearchBar extends React.Component {
