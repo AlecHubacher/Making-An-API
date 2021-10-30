@@ -23,16 +23,16 @@ export default function APIDoc(){
                 </div>
             </div>
 
-            <div className="wrapper">
-                <div className="collapsible">
-                    <input type="checkbox" id="collapsible-head"></input>
-                    <label for="collapsible-head">Collapsible USING </label>
-                    <div className="collapsible-text">
-                        <h2>Collapsible heading</h2>
-                        <p>This is stuff to print to screen</p>
-                    </div>
-                </div>
-            </div>
+            {/*<div className="wrapper">*/}
+            {/*    <div className="collapsible">*/}
+            {/*        <input type="checkbox" id="collapsible-head"></input>*/}
+            {/*        <label for="collapsible-head">Collapsible USING </label>*/}
+            {/*        <div className="collapsible-text">*/}
+            {/*            <h2>Collapsible heading</h2>*/}
+            {/*            <p>This is stuff to print to screen</p>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
         </div>
     )
 }
