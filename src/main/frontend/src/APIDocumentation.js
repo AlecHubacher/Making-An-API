@@ -15,19 +15,6 @@ export default function APIDoc(){
                         fghfgh fhfghfghfdfd gdfg dfg dfg df  df gdfg dfdfggdfg dfg dfgdfgdfg
                         fhjhfghj This endpoint returns every student in table Student sdf sdf asdfas fasf asf sadfa d
                         fghfgh fhfghfghfdfd gdfg dfg dfg df  df gdfg dfdfggdfg dfg dfgdfgdfg
-                        fhjhfghjThis endpoint returns every student in table Student sdf sdf asdfas fasf asf sadfa d
-                        fghfgh fhfghfghfdfd gdfg dfg dfg df  df gdfg dfdfggdfg dfg dfgdfgdfg
-                        fhjhfghj This endpoint returns every student in table Student sdf sdf asdfas fasf asf sadfa d
-                        fghfgh fhfghfghfdfd gdfg dfg dfg df  df gdfg dfdfggdfg dfg dfgdfgdfg
-                        fhjhfghjThis endpoint returns every student in table Student sdf sdf asdfas fasf asf sadfa d
-                        fghfgh fhfghfghfdfd gdfg dfg dfg df  df gdfg dfdfggdfg dfg dfgdfgdfg
-                        fhjhfghj This endpoint returns every student in table Student sdf sdf asdfas fasf asf sadfa d
-                        fghfgh fhfghfghfdfd gdfg dfg dfg df  df gdfg dfdfggdfg dfg dfgdfgdfg
-                        fhjhfghjThis endpoint returns every student in table Student sdf sdf asdfas fasf asf sadfa d
-                        fghfgh fhfghfghfdfd gdfg dfg dfg df  df gdfg dfdfggdfg dfg dfgdfgdfg
-                        fhjhfghj This endpoint returns every student in table Student sdf sdf asdfas fasf asf sadfa d
-                        fghfgh fhfghfghfdfd gdfg dfg dfg df  df gdfg dfdfggdfg dfg dfgdfgdfg
-                        fhjhfghj
                     </p>
                 </div>
             </div>

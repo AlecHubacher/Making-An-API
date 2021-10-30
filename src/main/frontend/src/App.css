@@ -87,7 +87,7 @@
 
 .boxgetendpoint {
   margin: 0 0 15px;
-  border: 1px solid #000;
+  border: 1px solid #59cc4c;
   border-radius: 4px;
   -webkit-box-shadow: 0 0 3px rgb(0 0 0 / 19%);
   box-shadow: 0 0 3px rgb(0 0 0 / 19%);
@@ -95,6 +95,7 @@
   margin: auto;
   cursor: pointer;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .getendpoint {
@@ -135,7 +136,7 @@ body {
   padding: 6px 15px;
   text-align: center;
   border-radius: 3px;
-  background: #00e6ce;
+  background: #59cc4c;/*#00e6ce*/
   border-color: black;
   text-shadow: 0 1px 0 rgb(0 0 0 / 10%);
   font-family: Titillium Web,sans-serif;
@@ -162,7 +163,7 @@ body {
 .boxgetendpoint input:checked ~ .collapsible-text-api {
   max-height: 300px;
   padding-bottom: 25px;
-  background: #cdfffa;
+  background: #cdfffa; /*#cdfffa*/
   /*box-shadow: 0 5px 11px 0 rgba(0,0,0,.1), 0 4px 11px 0 rgba(0,0,0,.08);*/
   box-shadow: 20px 20px;
   opacity: 1;
