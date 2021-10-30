@@ -24,7 +24,7 @@
   padding: 10px;
   overflow: auto;
   text-align: left;
-  background-color: #272822;
+  background-color: #d2ffcd;
 
 }
 
@@ -82,97 +82,3 @@
   padding-top: 50px;
   justify-content: center;
 }
-
-/*APIDOCUMENTATION.JS STARTS HERR*/
-
-.boxgetendpoint {
-  margin: 0 0 15px;
-  border: 1px solid #59cc4c;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 0 3px rgb(0 0 0 / 19%);
-  box-shadow: 0 0 3px rgb(0 0 0 / 19%);
-  background: #cdfffa;
-  margin: auto;
-  cursor: pointer;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.getendpoint {
-  font-size: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 3 auto;
-  flex: 0 3 auto;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  word-break: break-all;
-  padding: 0 10px;
-  font-family: Source Code Pro,monospace;
-  font-weight: 600;
-  color: black;
-}
-
-.getendpoint-label {
-  cursor: pointer;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  padding: 5px;
-}
-
-body {
-  background-color: #ffcdd2;
-}
-
-.getmethod {
-  font-size: 14px;
-  font-weight: 700;
-  min-width: 80px;
-  padding: 6px 15px;
-  text-align: center;
-  border-radius: 3px;
-  background: #59cc4c;/*#00e6ce*/
-  border-color: black;
-  text-shadow: 0 1px 0 rgb(0 0 0 / 10%);
-  font-family: Titillium Web,sans-serif;
-  color: #fff;
-}
-
-.boxgetendpoint label {
-  position: relative;
-  /*display: block;*/
-}
-
-.boxgetendpoint label:after {
-  content: "";
-  /*position: absolute;*/
-}
-
-.collapsible-text-api {
-  max-height: 1px;
-  overflow: hidden;
-  line-height: 1.4;
-  /*position: relative;*/
-}
-
-.boxgetendpoint input:checked ~ .collapsible-text-api {
-  max-height: 300px;
-  padding-bottom: 25px;
-  background: #cdfffa; /*#cdfffa*/
-  /*box-shadow: 0 5px 11px 0 rgba(0,0,0,.1), 0 4px 11px 0 rgba(0,0,0,.08);*/
-  box-shadow: 20px 20px;
-  opacity: 1;
-  top: 0;
-}
-
-
-.boxgetendpoint input {
-  display: none;
-}
-
-/*APIDOCUMENTATION ENDS HERE*/
