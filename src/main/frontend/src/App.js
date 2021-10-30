@@ -1,11 +1,6 @@
 import './App.css';
-import React, {useEffect, useState} from "react";
-import axios from "axios";
 import APIDoc from "./APIDocumentation";
 import Search from "./Search";
-import Event from "./Events";
-import Events from "./Events";
-
 
 function App() {
   return (

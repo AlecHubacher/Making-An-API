@@ -85,7 +85,7 @@
 
 /*APIDOCUMENTATION.JS STARTS HERR*/
 
-.boxgetallstudents {
+.boxgetendpoint {
   margin: 0 0 15px;
   border: 1px solid #000;
   border-radius: 4px;
@@ -115,7 +115,7 @@
   color: white;
 }
 
-.getallstudents {
+.getendpoint-label {
   cursor: pointer;
   display: -webkit-box;
   display: flex;
@@ -138,12 +138,12 @@
   color: #fff;
 }
 
-.boxgetallstudents label {
+.boxgetendpoint label {
   position: relative;
   /*display: block;*/
 }
 
-.boxgetallstudents label:after {
+.boxgetendpoint label:after {
   content: "";
   /*position: absolute;*/
 }
@@ -155,7 +155,7 @@
   /*position: relative;*/
 }
 
-.boxgetallstudents input:checked ~ .collapsible-text-api {
+.boxgetendpoint input:checked ~ .collapsible-text-api {
   max-height: 300px;
   padding-bottom: 25px;
   background: gray;
@@ -166,7 +166,7 @@
 }
 
 
-.boxgetallstudents input {
+.boxgetendpoint input {
   display: none;
 }
 
