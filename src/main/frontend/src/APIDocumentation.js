@@ -1,6 +1,15 @@
 import React from 'react'
 import './APImethodboxes.css'
+import JSONPretty from "react-json-pretty";
 export default function APIDoc(){
+    var jsonexample = "{" +
+        "id: 1," +
+        "name: Mariam," +
+        "email: mariam.jamal@gmail.com," +
+        "ob: 2000-01-05,age: 21" +
+        "}";
+    var actualjsonexample = JSON.stringify(jsonexample);
+    var JSONPrettyMon = require('react-json-pretty/dist/personalTheme');
     return(
         <div className="apidoc">
             <div className="boxgetendpoint">
@@ -15,10 +24,23 @@ export default function APIDoc(){
                     </p>
                     <div className="getallstudents-description">
                         <div className="exampleapicall">
-                            <p>TEXT RIGHT HERE</p>
+                            <div className="curlrequest">
+                                <p>
+                                    > curl http://localhost:8080/api/student/allstudents
+                                </p>
+                            </div>
+
+                            <div className="axiosrequest">
+                                <p id="p0">
+                                    axios.get('http://localhost:8080/api/student/allstudents')</p>
+                                    <p id="p1"> .then((response) => &#123;
+                                    console.log(response.data)
+                                &#125;);
+                                </p>
+                            </div>
                         </div>
                         <div className="examplejsonresponse">
-                            <p>SECOND DIV TEXT HERE</p>
+                            <JSONPretty data={actualjsonexample} theme={JSONPrettyMon}></JSONPretty>
                         </div>
                     </div>
                 </div>

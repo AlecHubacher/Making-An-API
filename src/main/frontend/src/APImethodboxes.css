@@ -88,9 +88,7 @@ body {
     display: none;
 }
 
-.getallstudents-description {
-    border: 3px solid #fff;
-}
+
 
 .exampleapicall {
     border: 2px solid red;
@@ -99,11 +97,73 @@ body {
     box-sizing: border-box;
 }
 
+.curlrequest {
+    margin: 0 0 15px;
+    border: 1px solid #94ff88;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 3px rgb(0 0 0 / 19%);
+    box-shadow: 0 0 3px rgb(0 0 0 / 19%);
+    background: #1e1e1e;
+    color: white;
+    margin: auto;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-family: Menlo,
+    Bitstream Vera Sans Mono,
+    Monaco,
+    Consolas,
+    monospace;
+}
+
+#p0 {
+    text-indent: 1em;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#p1 {
+    text-indent: 1em;
+    margin-top: 0;
+    padding: 0;
+}
+
+.axiosrequest {
+    margin: 0 0 15px;
+    border: 1px solid #94ff88;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 3px rgb(0 0 0 / 19%);
+    box-shadow: 0 0 3px rgb(0 0 0 / 19%);
+    background: #1e1e1e;
+    color: white;
+    margin: auto;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: hidden;
+    font-family: Menlo,
+    Bitstream Vera Sans Mono,
+    Monaco,
+    Consolas,
+    monospace;
+}
+
 .examplejsonresponse {
     border: 2px solid red;
     width: 50%;
+    height: 200px;
     float: left;
     box-sizing: border-box;
+    margin: 0 0 15px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 3px rgb(0 0 0 / 19%);
+    box-shadow: 0 0 3px rgb(0 0 0 / 19%);
+    background: #1e1e1e;
+    color: white;
+    margin: auto;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 /*END OF FIRST BOX*/
