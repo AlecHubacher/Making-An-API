@@ -10,11 +10,17 @@ export default function APIDoc(){
                     <span className="getendpoint">student/allstudents</span>
                 </label>
                 <div className="collapsible-text-api">
-                    <p>This endpoint returns every student in table Student sdf sdf asdfas fasf asf sadfa d
-                        fghfgh fhfghfghfdfd gdfg dfg dfg df  df gdfg dfdfggdfg dfg dfgdfgdfg
-                        fhjhfghj This endpoint returns every student in table Student sdf sdf asdfas fasf asf sadfa d
-                        fghfgh fhfghfghfdfd gdfg dfg dfg df  df gdfg dfdfggdfg dfg dfgdfgdfg
+                    <p>
+                        This endpoint returns allstudents in the table Student
                     </p>
+                    <div className="getallstudents-description">
+                        <div className="exampleapicall">
+                            <p>TEXT RIGHT HERE</p>
+                        </div>
+                        <div className="examplejsonresponse">
+                            <p>SECOND DIV TEXT HERE</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -36,7 +42,7 @@ export default function APIDoc(){
             <div className="boxgetendpoint3">
                 <input type="checkbox" id="boxgetendpoint-head3"></input>
                 <label htmlFor="boxgetendpoint-head3" className="getendpoint-label">
-                    <span className="getmethod3">GET</span>
+                    <span className="getmethod3">POST</span>
                     <span className="getendpoint">student/allstudents</span>
                 </label>
                 <div className="collapsible-text-api3">
