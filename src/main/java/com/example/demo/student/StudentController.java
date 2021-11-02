@@ -31,9 +31,15 @@ public class StudentController {
         return studentService.getStudentByID(id);
     }
 
-    @PostMapping()
+    @PostMapping("/addstudent")
     public void resgisterNewStudent(@RequestBody Student student) {
         studentService.addNewStudent(student);
+    }
+
+    @GetMapping("/getallstudentswithname")
+    @ResponseBody
+    public List<Student>  getAllStudentsWithName(@RequestParam String name) {
+        return studentService.getStudentsWithName(name);
     }
 }
 

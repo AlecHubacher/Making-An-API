@@ -84,7 +84,7 @@ class SearchBar extends React.Component {
                      dob: '1999-12-14',
                      age: 25
                  },
-                 url: "http://localhost:8080/api/student/"
+                 url: "http://localhost:8080/api/"+line
              };
              axios(options);
 

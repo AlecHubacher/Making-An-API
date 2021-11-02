@@ -102,7 +102,7 @@ export default function APIDoc(){
                 </a>
                 <label htmlFor="boxgetendpoint-head3" className="getendpoint-label">
                     <span className="getmethod3">POST</span>
-                    <span id="getendpoint3">some/other/endpoint</span>
+                    <span id="getendpoint3">student/addstudent</span>
                 </label>
                 <div className="collapsible-text-api3">
                     <p>This endpoint returns every student in table Student sdf sdf asdfas fasf asf sadfa d

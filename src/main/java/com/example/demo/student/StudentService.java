@@ -30,4 +30,6 @@ public class StudentService {
     public void addNewStudent(Student student) {
         studentRepository.save(student);
     }
+
+    public List<Student> getStudentsWithName(String name) {return studentRepository.findAllStudentsWithName(name);}
 }
