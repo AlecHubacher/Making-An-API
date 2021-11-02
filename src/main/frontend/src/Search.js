@@ -14,11 +14,16 @@ class SearchBar extends React.Component {
 
         this.state = {
             data: null,
-            requestType: false
+            requestType: false,
+            postname: "",
+            postemail: "",
+            postdob: "",
+            postage: ""
         }
 
         this._handleKeyPress = this._handleKeyPress.bind(this);
         this._handleClick = this._handleClick.bind(this);
+        this._handleTest = this._handleTest.bind(this);
     }
 
     _handleClick = (e) => {
@@ -45,26 +50,56 @@ class SearchBar extends React.Component {
 
         }
 
-     _handleKeyPress(e) {
-        if(e.key === 'Enter') {
-            console.log("enter has been pressed");
-            let line = e.target.value;
-            if(e.target.value === 'howdy') {
-                this.setState( {
-                    data: line
-                })
-            }
-            else {
-                console.log(line);
-                axios.get("http://localhost:8080/api/"+line).then(res => {
-                    console.log(res.data);
-                    this.setState({
-                        data: res.data
-                    })
-                });
-            }
+        _handleTest(e) {
+            console.log(e.target.className);
+        if(e.target.className === 'student-name-searchbox') {
+            this.setState({
+                postname: e.target.value,
+            })
+        } else if(e.target.className === 'student-email-searchbox') {
+            this.setState({
+                postemail: e.target.value,
+            })
+        } else if(e.target.className === 'student-dob-searchbox') {
+            this.setState({
+                postdob: e.target.value,
+            })
+        } else if(e.target.className === 'student-age-searchbox') {
+            this.setState({
+                postage: e.target.value,
+            })
         }
     }
+
+     _handleKeyPress(e) {
+         if (e.key === 'Enter') {
+             let line = e.target.value;
+             if(this.state.requestIsPost) {
+             const options = {
+                 method: 'POST',
+                 headers: {'Content-Type': 'application/json'},
+                 data: {
+                     id: 3,
+                     name: this.state.postname,
+                     email: this.state.postemail,
+                     dob: '1999-12-14',
+                     age: 25
+                 },
+                 url: "http://localhost:8080/api/student/"
+             };
+             axios(options);
+
+             } else {
+                 axios.get("http://localhost:8080/api/"+line).then(res => {
+                     this.setState( {
+                         data: res.data
+                     })
+                 })
+             }
+         } else {
+
+         }
+     }
 
     render() {
         return (
@@ -87,19 +122,23 @@ class SearchBar extends React.Component {
                 <div className="postrequestboxes">
                     <div className="student-name">
                         <p className="postfields">Name</p>
-                        <input placeholder="Mina" className="student-name-searchbox"></input>
+                        <input type="text" value={this.state.postname} onInput={this._handleTest} placeholder="Mina" className="student-name-searchbox"></input>
+                        <p>{this.state.postname}</p>
                     </div>
                     <div className="student-email">
                         <p className="postfields">Email</p>
-                        <input placeholder="mina@yahoo.com" className="student-email-searchbox"></input>
+                        <input type="text" value={this.state.postemail} onInput={this._handleTest} placeholder="mina@yahoo.com" className="student-email-searchbox"></input>
+                        <p>{this.state.postemail}</p>
                     </div>
                     <div className="student-dob">
                         <p className="postfields">Date of Birth</p>
-                        <input placeholder="year-month-day" className="student-dob-searchbox"></input>
+                        <input type="text" value={this.state.postdob} onInput={this._handleTest} placeholder="year-month-day" className="student-dob-searchbox"></input>
+                        <p>{this.state.postdob}</p>
                     </div>
                     <div className="student-age">
                         <p className="postfields">Age</p>
-                        <input placeholder="27" className="student-age-searchbox"></input>
+                        <input type="text" value={this.state.postage} onInput={this._handleTest} placeholder="27" className="student-age-searchbox"></input>
+                        <p>{this.state.postage}</p>
                     </div>
                     <span className="stretch"></span>
                 </div>

@@ -31,9 +31,9 @@ public class StudentController {
         return studentService.getStudentByID(id);
     }
 
-    @PostMapping(path = "/addstudent", consumes = {"application/json"})
-    public Student addStudent(@RequestBody Student student) {
-       return studentService.addStudent(student);
+    @PostMapping()
+    public void resgisterNewStudent(@RequestBody Student student) {
+        studentService.addNewStudent(student);
     }
 }
 
