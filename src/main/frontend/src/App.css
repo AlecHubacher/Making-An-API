@@ -8,6 +8,84 @@
 
 /*START OF SEARCH.JS*/
 
+.postrequestboxes {
+  border: 2px dashed #444;
+  height: 125px;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+  /* just for demo */
+
+}
+
+.student-name,
+.student-age,
+.student-email,
+.student-dob {
+  width: 25%;
+  height: 125px;
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
+}
+
+.postfields {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+
+.student-name-searchbox,
+.student-age-searchbox,
+.student-email-searchbox,
+.student-dob-searchbox {
+  display: block;
+  margin: 0 auto;
+
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+}
+
+
+
+
+
+
+.request {
+  float: left;
+  margin-top: 5px;
+  margin-left: 15px;
+  background: #2f3640;
+  color: white;
+  border-radius: 40px;
+  height: 50px;
+  width: 80px;
+  text-align: center;
+}
+
+.searchendpoint {
+  border-color: red;
+  border-style: solid;
+  margin: auto;
+  width: 60%;
+  border-style: solid;
+  border-radius: 25px;
+  padding: 10px;
+  overflow: auto;
+  text-align: left;
+}
+
+
+
 .jsonresponse {
   text-align: left;
   width: 50%;
@@ -18,7 +96,7 @@
   margin: auto;
   height: 400px;
   width: 60%;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 15px;
   border-style: solid;
   border-radius: 25px;
@@ -38,7 +116,7 @@
   padding: 10px;
   /*margin-right: 800px;*/
   /*margin-left: 800px;*/
-  width: 34%;
+  width: 48%;
   margin: auto;
 }
 

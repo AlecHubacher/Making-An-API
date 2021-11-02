@@ -30,5 +30,10 @@ public class StudentController {
     public Student getStudentByID(@RequestParam Long id) {
         return studentService.getStudentByID(id);
     }
+
+    @PostMapping(path = "/addstudent", consumes = {"application/json"})
+    public Student addStudent(@RequestBody Student student) {
+       return studentService.addStudent(student);
+    }
 }
 
