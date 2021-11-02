@@ -79,7 +79,6 @@ class SearchBar extends React.Component {
                  method: 'POST',
                  headers: {'Content-Type': 'application/json'},
                  data: {
-                     id: 3,
                      name: this.state.postname,
                      email: this.state.postemail,
                      dob: '1999-12-14',
