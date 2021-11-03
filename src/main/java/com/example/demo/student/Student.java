@@ -15,8 +15,8 @@ public class Student {
     private String email;
     @Column(name="dob")
     private LocalDate dob;
-    @Column(name="age")
-    private Integer age;
+    @Column(name="major")
+    private String major;
 
     public Student() {
 
@@ -26,22 +26,22 @@ public class Student {
                    String name,
                    String email,
                    LocalDate dob,
-                   Integer age) {
+                   String major) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.dob = dob;
-        this.age = age;
+        this.major = major;
     }
 
     public Student(String name,
                    String email,
                    LocalDate dob,
-                   Integer age) {
+                   String major) {
         this.name = name;
         this.email = email;
         this.dob = dob;
-        this.age = age;
+        this.major = major;
     }
 
     public Long getId() {
@@ -60,12 +60,12 @@ public class Student {
         this.name = name;
     }
 
-    public Integer getAge() {
-        return age;
+    public String getMajor() {
+        return major;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setMajor(String major) {
+        this.major = major;
     }
 
     public LocalDate getDob() {
@@ -89,7 +89,7 @@ public class Student {
         return "Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", age=" + age +
+                ", major=" + major +
                 ", dob=" + dob +
                 ", email='" + email + '\'' +
                 '}';

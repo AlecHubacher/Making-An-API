@@ -18,13 +18,17 @@ class SearchBar extends React.Component {
             postname: "",
             postemail: "",
             postdob: "",
-            postage: ""
+            postmajor: ""
         }
 
         this._handleKeyPress = this._handleKeyPress.bind(this);
         this._handleClick = this._handleClick.bind(this);
         this._handleTest = this._handleTest.bind(this);
     }
+
+    // getCorrectDataState(myDate) {
+    //     if
+    // }
 
     _handleClick = (e) => {
         if(e.target.value === 'POST') {
@@ -33,7 +37,7 @@ class SearchBar extends React.Component {
                 postname: "",
                 postemail: "",
                 postdob: "",
-                postage: ""
+                postmajor: ""
             })
             if(this.state.requestIsPost) {
                 console.log("state of requestIsPost is now: true");
@@ -64,9 +68,9 @@ class SearchBar extends React.Component {
             this.setState({
                 postdob: e.target.value,
             })
-        } else if(e.target.className === 'student-age-searchbox') {
+        } else if(e.target.className === 'student-major-searchbox') {
             this.setState({
-                postage: e.target.value,
+                postmajor: e.target.value,
             })
         }
     }
@@ -75,14 +79,18 @@ class SearchBar extends React.Component {
          if (e.key === 'Enter') {
              let line = e.target.value;
              if(this.state.requestIsPost) {
+                 console.log("here is name"+this.state.postname)
+                 console.log("here is email"+this.state.postemail)
+                 console.log("here is dob"+this.state.postdob)
+                 console.log("here is major"+this.state.postmajor)
              const options = {
                  method: 'POST',
                  headers: {'Content-Type': 'application/json'},
                  data: {
                      name: this.state.postname,
                      email: this.state.postemail,
-                     dob: '1999-12-14',
-                     age: 25
+                     dob: this.state.postdob,
+                     major: this.state.postmajor
                  },
                  url: "http://localhost:8080/api/"+line
              };
@@ -122,22 +130,19 @@ class SearchBar extends React.Component {
                     <div className="student-name">
                         <p className="postfields">Name</p>
                         <input type="text" value={this.state.postname} onInput={this._handleTest} placeholder="Mina" className="student-name-searchbox"></input>
-                        <p>{this.state.postname}</p>
                     </div>
                     <div className="student-email">
                         <p className="postfields">Email</p>
                         <input type="text" value={this.state.postemail} onInput={this._handleTest} placeholder="mina@yahoo.com" className="student-email-searchbox"></input>
-                        <p>{this.state.postemail}</p>
                     </div>
                     <div className="student-dob">
                         <p className="postfields">Date of Birth</p>
-                        <input type="text" value={this.state.postdob} onInput={this._handleTest} placeholder="year-month-day" className="student-dob-searchbox"></input>
-                        <p>{this.state.postdob}</p>
+                        <input type="text" value={this.state.postdob} onInput={this._handleTest} placeholder="yyyy-mm-dd" className="student-dob-searchbox"></input>
                     </div>
-                    <div className="student-age">
-                        <p className="postfields">Age</p>
-                        <input type="text" value={this.state.postage} onInput={this._handleTest} placeholder="27" className="student-age-searchbox"></input>
-                        <p>{this.state.postage}</p>
+                    <div className="student-major">
+                        <p className="postfields">Major</p>
+                        <input type="text" value={this.state.postmajor} onInput={this._handleTest} placeholder="Computer Science" className="student-major-searchbox"></input>
+                        <p>{this.state.postmajor}</p>
                     </div>
                     <span className="stretch"></span>
                 </div>

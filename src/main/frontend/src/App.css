@@ -19,7 +19,7 @@
 }
 
 .student-name,
-.student-age,
+.student-major,
 .student-email,
 .student-dob {
   width: 25%;
@@ -45,7 +45,7 @@
 
 
 .student-name-searchbox,
-.student-age-searchbox,
+.student-major-searchbox,
 .student-email-searchbox,
 .student-dob-searchbox {
   display: block;
