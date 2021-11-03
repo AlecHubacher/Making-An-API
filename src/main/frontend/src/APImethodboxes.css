@@ -80,7 +80,7 @@ body {
     content: "";
     /*position: absolute;*/
 }
-
+.collapsible-text-api3,
 .collapsible-text-api {
     max-height: 1px;
     overflow: hidden;
@@ -113,29 +113,6 @@ body {
     box-sizing: border-box;
 }
 
-.curlrequest {
-    margin: 0 0 15px;
-    border: 1px solid #94ff88;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 0 3px rgb(0 0 0 / 19%);
-    box-shadow: 0 0 3px rgb(0 0 0 / 19%);
-    background: #1e1e1e;
-    color: white;
-    padding-bottom: 15px;
-    text-align: left;
-    margin: auto;
-    cursor: pointer;
-    overflow: hidden;
-    font-size: 14px;
-    height: 50px;
-    line-height: 35px;
-    font-family: Menlo,
-    Bitstream Vera Sans Mono,
-    Monaco,
-    Consolas,
-    monospace;
-}
-
 #p0 {
     text-indent: 1em;
     margin-bottom: 0;
@@ -146,26 +123,6 @@ body {
     text-indent: 1em;
     margin-top: 0;
     padding: 0;
-}
-
-.axiosrequest {
-    margin: 0 0 15px;
-    border: 1px solid #94ff88;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 0 3px rgb(0 0 0 / 19%);
-    box-shadow: 0 0 3px rgb(0 0 0 / 19%);
-    text-align: left;
-    background: #1e1e1e;
-    color: white;
-    margin: auto;
-    font-size: 14px;
-    cursor: pointer;
-    overflow: hidden;
-    font-family: Menlo,
-    Bitstream Vera Sans Mono,
-    Monaco,
-    Consolas,
-    monospace;
 }
 
 /*END OF FIRST BOX*/
@@ -242,6 +199,8 @@ body {
     cursor: context-menu;
 }
 
+.axiosrequest,
+.axiosrequest-addstudent,
 .axiosrequest-getstudentbyid {
     margin: 0 0 15px;
     border: 1px solid #94ff88;
@@ -256,6 +215,51 @@ body {
     cursor: pointer;
     overflow: hidden;
     padding-bottom: 10px;
+    font-family: Menlo,
+    Bitstream Vera Sans Mono,
+    Monaco,
+    Consolas,
+    monospace;
+}
+
+.curlrequest {
+    margin: 0 0 15px;
+    border: 1px solid #94ff88;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 3px rgb(0 0 0 / 19%);
+    box-shadow: 0 0 3px rgb(0 0 0 / 19%);
+    background: #1e1e1e;
+    color: white;
+    padding-bottom: 15px;
+    text-align: left;
+    margin: auto;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 14px;
+    height: 50px;
+    line-height: 35px;
+    font-family: Menlo,
+    Bitstream Vera Sans Mono,
+    Monaco,
+    Consolas,
+    monospace;
+}
+
+.curlrequestpost {
+    margin: 0 0 15px;
+    border: 1px solid #94ff88;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 3px rgb(0 0 0 / 19%);
+    box-shadow: 0 0 3px rgb(0 0 0 / 19%);
+    background: #1e1e1e;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+    margin: auto;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 12px;
     font-family: Menlo,
     Bitstream Vera Sans Mono,
     Monaco,

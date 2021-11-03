@@ -3,6 +3,7 @@ import './APImethodboxes.css'
 import JSONPretty from "react-json-pretty";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCopy} from "@fortawesome/free-solid-svg-icons";
+import axios from "axios";
 export default function APIDoc(){
     var jsonexample = "{" +
         "id: 1," +
@@ -38,13 +39,13 @@ export default function APIDoc(){
                 </label>
                 <div className="collapsible-text-api">
                     <p>
-                        This endpoint returns allstudents in the table Student
+                        This endpoint returns all students in the table Student
                     </p>
                     <div className="getallstudents-description">
                         <div className="exampleapicall">
                             <div className="curlrequest">
-                                <p>
-                                    > curl http://localhost:8080/api/student/allstudents
+                                <p id="p0">
+                                    curl http://localhost:8080/api/student/allstudents
                                 </p>
                             </div>
                         </div>
@@ -72,13 +73,13 @@ export default function APIDoc(){
                 </label>
                 <div className="collapsible-text-api2">
                     <p>
-                        This endpoint returns a single student based on their id
+                        This endpoint returns a single student given their id
                     </p>
                     <div className="getallstudents-description">
                         <div className="exampleapicall">
                             <div className="curlrequest">
-                                <p>
-                                    > curl http://localhost:8080/api/student/getstudentbyid?id=1
+                                <p id="p0">
+                                     curl http://localhost:8080/api/student/getstudentbyid?id=1
                                 </p>
                             </div>
                         </div>
@@ -105,11 +106,36 @@ export default function APIDoc(){
                     <span id="getendpoint3">student/addstudent</span>
                 </label>
                 <div className="collapsible-text-api3">
-                    <p>This endpoint returns every student in table Student sdf sdf asdfas fasf asf sadfa d
-                        fghfgh fhfghfghfdfd gdfg dfg dfg df df gdfg dfdfggdfg dfg dfgdfgdfg
-                        fhjhfghj This endpoint returns every student in table Student sdf sdf asdfas fasf asf sadfa d
-                        fghfgh fhfghfghfdfd gdfg dfg dfg df df gdfg dfdfggdfg dfg dfgdfgdfg
+                    <p>
+                        This endpoint lets you add a student to the table Student
                     </p>
+                    <div className="getallstudents-description">
+                        <div className="exampleapicall">
+                            <div className="curlrequestpost">
+                                <p>
+                                    curl -d '&#123;json&#125;' -H 'Content-Type: application/json -X POST
+                                    -F 'name=linuxize' -F 'email=linuxize@example.com' -F 'dob=1999-05-05'
+                                    -F 'major=Computer Science' http://localhost:8080/api/student/addstudent
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="axiosrequest-addstudent">
+                            <p>
+                                const options = &#123;<br />
+                                &emsp;&emsp;&emsp;&emsp;method: 'POST',<br />
+                                &emsp;&emsp;&emsp;&emsp;headers: &#123;'Content-Type': 'application/json'&#125;,<br />
+                                &emsp;&emsp;&emsp;&emsp;data: &#123;<br />
+                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;name: "John",<br />
+                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;email: "john@gmail.com,<br />
+                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;dob: "1999-05-05",<br />
+                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;major: "Computer Science"<br />
+                                &emsp;&emsp;&emsp;&emsp;&#125;, <br />
+                                &emsp;&emsp;&emsp;&emsp;url: "http://localhost:8080/api/student/addstudent"<br />
+                                &#125;;<br />
+                                axios(options);</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

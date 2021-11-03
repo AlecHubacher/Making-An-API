@@ -142,7 +142,6 @@ class SearchBar extends React.Component {
                     <div className="student-major">
                         <p className="postfields">Major</p>
                         <input type="text" value={this.state.postmajor} onInput={this._handleTest} placeholder="Computer Science" className="student-major-searchbox"></input>
-                        <p>{this.state.postmajor}</p>
                     </div>
                     <span className="stretch"></span>
                 </div>
